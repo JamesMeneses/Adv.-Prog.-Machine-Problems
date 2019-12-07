@@ -1,15 +1,16 @@
 import math as m
 x1=float(input('Enter the 1st X Value: '))
-x2=float(input('Enter the 2nd X Value: '))
-x3=float(input('Enter the 3rd X Value: '))
 y1=float(input('Enter the 1st Y Value: '))
+x2=float(input('Enter the 2nd X Value: '))
 y2=float(input('Enter the 2nd Y Value: '))
+x3=float(input('Enter the 3rd X Value: '))
 y3=float(input('Enter the 3rd Y Value: '))
+print('\n')
 X12=x1-x2
 X13=x1-x3
 X31=x3-x1
 X21=x2-x1
-Y12=y1-y2
+Y12=y1-y2#these are basically the operations needed for the determinants of D E F
 Y13=y1-y3
 Y31=y3-y1
 Y21=y2-y1
@@ -25,6 +26,6 @@ k=-E
 rroot=(h*h)+(k*k)-F
 root=m.sqrt(rroot)
 r=round(root,3)
-print('Center:[',h,',',k,']')
-print('Radius: ',r)
-print('Vectors:[',2*D,2*E,F,']')#GE:X**2+Y**2+2X+2Y+F, where X is D and Y is E
+print('Center:[',round(h,3),',',round(k,3),']')
+print('Radius: ',round(r,3))
+print('Vectors:[',round(2*D,3),round(2*E,3),round(F,3),']')#GE:X**2+Y**2+2X+2Y+F, where X is D and Y is E
