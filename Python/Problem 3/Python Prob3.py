@@ -20,3 +20,4 @@ def MP_3(comp):
     plt.plot(x,y,'-o',label="Data points")
     plt.plot(x,y3,'-*',label="Best Fit Curve")
     plt.legend(loc="upper right")
+    print('Coefficients of Best Fit Polynomial: ', bestfit)
