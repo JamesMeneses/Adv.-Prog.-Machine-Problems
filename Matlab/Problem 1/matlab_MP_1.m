@@ -1,4 +1,4 @@
-    function matlab_MP_1()
+function matlab_MP_1()
 clc
 n = linspace(0,99);
 y = linspace(0,99);
