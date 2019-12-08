@@ -1,6 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 n=np.arange(200)
+print('Sample Input:  MP_5(np.sin((3*n*np.pi)/100))')
+print('')
+print('Wherein <np.sin((3*n*np.pi)/100)> is an array that is a function of n')
+print('Please don''t forget to put the np prefix to the function to read the input as an array')
 def MP_5(x):
     y=list(np.arange(200))
     for z in range(0,200):
