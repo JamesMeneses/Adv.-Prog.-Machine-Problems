@@ -18,12 +18,12 @@ X2X1=(x2**2)-(x1**2)
 Y2Y1=(y2**2)-(y1**2)
 X1X3=(x1**2)-(x3**2)
 Y1Y3=(y1**2)-(y3**2)
-D=((X1X3*Y12)+(Y1Y3*Y12)+(X2X1*Y13)+(Y2Y1*Y13))/(2*((X31*Y12)-(X21*Y13)))
-E=((X1X3*X12)+(Y1Y3*X12)+(X2X1*X13)+(Y2Y1*X13))/(2*((Y31*X12)-(Y21*X13)))
-F=-pow(x1,2)-pow(y1,2)-2*D*x1-2*E*y1
+D=((X1X3*Y12)+(Y1Y3*Y12)+(X2X1*Y13)+(Y2Y1*Y13))/(2*((X31*Y12)-(X21*Y13)))#Actually is x
+E=((X1X3*X12)+(Y1Y3*X12)+(X2X1*X13)+(Y2Y1*X13))/(2*((Y31*X12)-(Y21*X13)))#Actually is Y
+F=-(x1**2)-(y1**2)-2*D*x1-2*E*y1
 h=-D
 k=-E
-rroot=(h*h)+(k*k)-F
+rroot=(h**2)+(k**2)-F
 root=m.sqrt(rroot)
 r=round(root,3)
 print('Center:[',round(h,3),',',round(k,3),']')
