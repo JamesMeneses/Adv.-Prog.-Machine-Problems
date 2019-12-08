@@ -8,6 +8,12 @@ Yacc=float(input('Enter the Y-COMPONENT of the acceleration, considering the sig
 if Yacc==0:
     print('Error: Vertical acceleration must not be zero')
     exit()
+elif vel<0:
+    print('Error: Magnitude of velocity cannot be less than zero')
+    exit()
+elif h<0:
+    print('Error: Initial height MUST be above ground')
+    exit()
 time=(vel*(np.sin(np.deg2rad(angle)))+np.sqrt(((vel*(np.sin(np.deg2rad(angle))))**2)+2*(np.abs(Yacc)*h)))/np.abs(Yacc)
 timevector=np.linspace(0,time,1000)
 Heq=[Xacc/2,vel*(np.cos(np.deg2rad(angle))),0]
